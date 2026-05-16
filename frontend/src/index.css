@@ -1,0 +1,54 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100;
+  }
+  
+  code {
+    @apply font-mono text-sm;
+  }
+}
+
+@layer components {
+  .terminal-input {
+    @apply bg-slate-900 border border-emerald-900/50 rounded px-3 py-2 text-emerald-400 font-mono text-sm;
+  }
+
+  .btn-primary {
+    @apply px-4 py-2 bg-emerald-900/40 hover:bg-emerald-900/60 border border-emerald-700/50 rounded text-emerald-400 transition font-bold;
+  }
+
+  .btn-danger {
+    @apply px-4 py-2 bg-rose-900/40 hover:bg-rose-900/60 border border-rose-700/50 rounded text-rose-400 transition font-bold;
+  }
+}
+
+/* Custom scrollbar for terminal */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-950;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-700 rounded hover:bg-slate-600;
+}
+
+/* Animations */
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

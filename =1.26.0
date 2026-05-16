@@ -1,0 +1,17 @@
+Collecting numpy
+  Using cached numpy-2.4.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Collecting pandas==2.1.0
+  Using cached pandas-2.1.0.tar.gz (4.3 MB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): still running...
+  Preparing metadata (pyproject.toml): still running...
+  Preparing metadata (pyproject.toml): still running...
+  Preparing metadata (pyproject.toml): still running...
+  Preparing metadata (pyproject.toml): still running...
+  Preparing metadata (pyproject.toml): finished with status 'error'

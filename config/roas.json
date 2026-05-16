@@ -1,0 +1,26 @@
+[
+  {
+    "prefix":     "10.10.0.0/16",
+    "origin_as":  10,
+    "max_length": 16,
+    "_comment":   "Victim AS10 — tight maxLength=/16 blocks all subprefix attacks"
+  },
+  {
+    "prefix":     "10.20.0.0/16",
+    "origin_as":  20,
+    "max_length": 24,
+    "_comment":   "Legitimate AS20 — maxLength=/24 allows internal subnets"
+  },
+  {
+    "prefix":     "172.16.2.0/24",
+    "origin_as":  2,
+    "max_length": 24,
+    "_comment":   "AS2 Regional ISP West"
+  },
+  {
+    "prefix":     "172.16.3.0/24",
+    "origin_as":  3,
+    "max_length": 24,
+    "_comment":   "AS3 Regional ISP East"
+  }
+]
